@@ -1,2 +1,2 @@
 # printf
-Repository for the Printf group project
+Repository for the Printf group project tasks
