@@ -14,7 +14,7 @@ char buffer[BUFF_SIZE];
 if (format == NULL)
 	return (-1);
 va_start(list, format);
-for (j =0; format && format[j] != '\0'; j++)
+for (j = 0; format && format[j] != '\0'; j++)
 {
 if (format[j] != '%')
 {
@@ -49,6 +49,6 @@ return (printed_chars);
 void print_buffer(char buffer[], int *buff_ind)
 {
 if (*buff_ind > 0)
-	write(j, &buffer[0], *buff_ind);
+	write(1, &buffer[0], *buff_ind);
 *buff_ind = 0;
 }
